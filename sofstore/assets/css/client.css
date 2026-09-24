@@ -1,0 +1,69 @@
+/* Banner "PRODUCTOS DEL DÍA" según diseño mockup */
+.day-products-banner {
+    background-color: var(--medium-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    box-shadow: var(--shadow-sm);
+}
+
+.user-greeting {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--white);
+}
+
+/* Indicadores de Stock */
+.tag-stock {
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.tag-stock.in-stock {
+    background-color: #E8F8F5;
+    color: var(--teal);
+}
+
+.tag-stock.out-stock {
+    background-color: #FADBD8;
+    color: var(--status-rejected);
+}
+
+/* Contador flotante del Carrito */
+.badge {
+    background-color: var(--teal);
+    color: var(--white);
+    font-size: 0.65rem;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+    position: absolute;
+    top: 4px;
+    right: 22%;
+}
+
+/* Ajustes de Navegación Inferior */
+.bottom-nav {
+    background-color: var(--dark-blue);
+    border-top: 2px solid var(--sky-blue);
+}
+
+.bottom-nav .nav-item {
+    color: var(--white);
+}
+
+.bottom-nav .nav-item.active {
+    color: var(--sky-blue);
+}
+
+.bottom-nav .nav-item i {
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+}

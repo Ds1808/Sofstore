@@ -1,0 +1,25 @@
+:root {
+    /* Paleta Oficial extraída del diseño Sofstore */
+    --teal: #00A896;
+    --medium-blue: #1D70B8;
+    --sky-blue: #48CAE4;
+    --dark-blue: #0D1B2A;
+    --grey-bg: #F4F5F7;
+    --grey-card: #E0E1DD;
+    --grey-text: #6C757D;
+    --white: #FFFFFF;
+    
+    /* Estados de Pedido e Insignias */
+    --status-pending: #FFB703;
+    --status-ready: #00A896;
+    --status-delivered: #8D99AE;
+    --status-rejected: #E63946;
+
+    /* Tipografía y Sombras */
+    --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --shadow-sm: 0 2px 6px rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
+}

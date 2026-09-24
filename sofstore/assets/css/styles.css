@@ -1,0 +1,209 @@
+   @import url('variables.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main);
+}
+
+body {
+    background-color: var(--grey-bg);
+    color: var(--dark-blue);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 75px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Superior */
+.app-header {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow-sm);
+}
+
+.app-header .brand {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--sky-blue);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Botones Principales */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--medium-blue);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: #155893;
+}
+
+.btn-teal {
+    background-color: var(--teal);
+    color: var(--white);
+}
+
+.btn-teal:hover {
+    background-color: #00887a;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* Grilla Responsiva */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+    padding: 16px;
+    align-items: stretch;
+}
+
+@media (min-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 20px;
+        padding: 24px;
+    }
+}
+
+/* Tarjeta Fija */
+.product-card {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    padding: 14px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(0,0,0,0.05);
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Contenedor Fijo de Imagen / Icono */
+.product-card .img-container {
+    width: 100%;
+    height: 120px;
+    background-color: #EBF3F5;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.product-card .placeholder-icon {
+    font-size: 2.5rem;
+    color: var(--teal);
+    opacity: 0.7;
+}
+
+.product-card .title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: var(--dark-blue);
+}
+
+.product-card .price {
+    color: var(--medium-blue);
+    font-weight: 800;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Navegación Inferior */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    background: var(--dark-blue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid var(--sky-blue);
+    z-index: 1000;
+}
+
+.bottom-nav .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    color: var(--white);
+    text-decoration: none;
+    flex: 1;
+    height: 100%;
+}
+
+.bottom-nav .nav-item.active {
+    color: var(--sky-blue);
+    font-weight: 700;
+}
+
+.bottom-nav .nav-icon {
+    font-size: 1.25rem;
+    margin-bottom: 3px;
+}
+
+/* Wrapper e indicador del carrito */
+.cart-icon-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background-color: var(--teal);
+    color: var(--white);
+    font-size: 0.65rem;
+    font-weight: 800;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--dark-blue);
+}
