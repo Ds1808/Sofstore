@@ -39,7 +39,7 @@ if ($action === 'add') {
                 break;
             }
         }
-
+        //Andres la mas perra
         $stock = 0;
         foreach (['stock_actual', 'stock', 'cantidad'] as $sCol) {
             if (isset($prod[$sCol]) && $prod[$sCol] !== null) {
